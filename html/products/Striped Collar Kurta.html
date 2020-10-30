@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='../../styles/header.css'>
+    <link rel='stylesheet' href='../../styles/footer.css'>
+    <link rel="stylesheet" href="../../styles/product.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src='../../scripts/redirects.js'></script>
+    <script src='../../scripts/cookie.js'></script>
+    <title>HOME | Galipahinana</title>
+</head>
+
+<body>
+    <nav>
+        <div class='nav-container'>
+            <div class='title' onclick='homeRedirect()'>GALIPAHINANA</div>
+            <div class='nav-item' onclick='homeRedirect()'>HOME</div>
+            <div class='nav-item menu-container'>CATEGORIES
+                <ul class='dropdown-menu'>
+                    <li onclick='womenClick()'>WOMEN</li>
+                    <li onclick='menClick()'>MEN</li>
+                    <li onclick='accClick()'>ACCESSORIES</li>
+                </ul>
+            </div>
+            <div class='nav-item' onclick='aboutClick()'>ABOUT US</div>
+            <div class='nav-item' onclick='cartClick()' id='cart'><span class='fa fa-shopping-bag'></span>&nbsp;Cart
+            </div>
+            <div class='nav-item' onclick='loginClick()' id='login'><span class='fa fa-user-circle-o'></span>&nbsp;Log
+                In</div>
+            <div class='nav-item' onclick='logoutClick()' id='logout'><span class='fa fa-user-circle-o'></span>&nbsp;Log
+                Out</div>
+        </div>
+    </nav>
+
+    <!-- Page Content -->
+    <main>
+        <div class="content-wrapper">
+            <div class="image-wrapper">
+                <div class="image-container">
+                    <img src="../../assets/kurta.webp" alt="Striped Collar Kurta">
+                </div>
+                <div class="desc">
+                    <p>The signature style red kurta with biege stripes.</p>
+                </div>
+            </div>
+            <div class="content-container">
+                <h1>Striped Collar Kurta</h1>
+                <h3>₹600</h3>
+                <form action="../../php/add_to_cart.php" method="POST">
+                    <p>Quantity</p>
+                    <input type="number" name="quantity" id="quantity" min="1" value='1'/><br>
+                    <input type="submit" value="Add to Cart" name="kurta"/>
+                </form>
+                <h5>Product Information</h5>
+                <ul style="list-style-type: circle;">
+                    <li>Fabric: 95% Polyester, 5% Spandex</li>
+                    <li>Soft fabric with great fall, has some stretch, and lightweight</li>
+                    <li>Suitable Occasion: Casual/Party/Wedding</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class='footer-info-wrapper'>
+            <div class='footer-info footer-title' onClick='titleClick()'>GALIPAHINANA</div>
+            <div class='footer-info'>
+                <p class='footer-info-title'>CONTACT US</p>
+                <p class='footer-content'>Telephone:<br><span style='color:#242323'>022-67819272</span></p>
+                <p class='footer-content'>Email:<br><a href='mailto:galipahinana@gmail.com'
+                        style='color:#242323'>galipahinana@gmail.com</a></p>
+            </div>
+            <div class='footer-info'>
+                <p class='footer-info-title'>STORE ADDRESS</p>
+                <p class='footer-content' style='color:#242323'>The Galipahinana Store<br>Rajouri Garden<br>South Delhi
+                    - 110027</p>
+            </div>
+            <div class='footer-info'>
+                <p>STAY CONNECTED</p>
+                <p class='footer-content footer-logo'><a href='https://www.instagram.com/galipahinana/'
+                        target="_blank"><i class='fa fa-instagram fa-2x'></i></a>&nbsp;&nbsp;
+                    <a href='https://www.facebook.com/galipahinana-103518154732555' target='_blank'><i
+                            class='fa fa-facebook-official fa-2x'></i></a></p>
+            </div>
+        </div>
+        <div class='copyright'>&copy; 2020 by Galipahinana</div>
+    </footer>
+</body>
+
+</html>

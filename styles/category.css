@@ -1,0 +1,32 @@
+.content-wrapper {
+    text-align: center;
+    color: #242323;
+}
+
+.heading-container {
+    width: 100%;
+    background: #f6f3f2;
+}
+
+.heading-container h1 {
+    padding: 1% 0;
+    font-weight: normal;
+}
+
+.card-wrapper {
+    padding: 2vh 16vw;
+    height: 70vh;
+}
+
+.card-container {
+    float: left;
+    cursor: pointer;
+    width: 20vw;
+    text-align: left;
+    margin: auto 1.5%;
+}
+
+.card-container img {
+    width: 100%;
+    height: 60vh;
+}

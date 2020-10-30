@@ -1,0 +1,65 @@
+.continue {
+    border: none;
+    font-size: 1.1em;
+    width: 16.1vw;
+    cursor: pointer;
+    padding: 0.5%;
+    background: #726c6c;
+    color: white;
+}
+
+.continue:hover {
+    background: #43dd13c0;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+.cart-card {
+    border: 1px black solid;
+    margin: 2% 1%;
+    width: 60vw;
+}
+
+.cart-card h1 {
+    font-weight: 100;
+    padding: 1% 5%;
+    font-size: 2.5em;
+}
+
+.cart-card p {
+    padding: 1% 5%;
+    font-size: 1.1em;
+}
+
+.prodImg {
+    width: 100%;
+}
+
+.total-container {
+    width: 60vw;
+    margin: 2% 1%;
+    text-align: right;
+}
+
+.total-container p {
+    margin: 1%;
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+.btn {
+    border: none;
+    margin: 2% 1%;
+    width: 10vw;
+    font-size: 1.2em;
+    cursor: pointer;
+    padding: 0.6%;
+    background: #726c6c;
+    color: white;
+}
+
+.btn:hover {
+    background: #43dd13c0;
+    color: black;
+    transition-duration: 0.5s;
+}

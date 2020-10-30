@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background: #fdfdfd;
+}
+
+.auth-wrapper {
+    padding: 20vh 0;
+    text-align: center;
+}
+
+.auth-container h1 {
+    font-weight: 200;
+    font-size: 3em;
+    margin-bottom: 1%;
+}
+
+.auth-container p {
+    font-size: 1.25em;
+    margin-bottom: 2%;
+}
+
+a, a:active, a:visited {
+    color: #998c88;
+    text-decoration: none;
+}
+
+form input[type='email'], form input[type='password'] {
+    border-bottom: 1px black solid;
+}
+
+form input {
+    border: none;
+    margin: 1% auto;
+    padding: 0.5%;
+    background: #fdfdfd;
+    font-weight: 10;
+    width: 15vw;
+}
+
+input[type='submit'], input[type='email'] {
+    font-size: 1.1em;
+}
+
+input:focus{
+    border: none;
+    border-bottom: 1px black solid;
+}
+
+input[type='submit'] {
+    width: 16.1vw;
+    cursor: pointer;
+    padding: 0.5%;
+    background: #726c6c;
+    color: white;
+}
+
+input[type='submit']:hover {
+    background: #43dd13c0;
+    color: black;
+    transition-duration: 0.5s;
+}
+
+.hamburger {
+    position: absolute;
+    position: fixed;
+    right: 5%;
+    top: 5%;
+    width: 2vw;
+    height: 10vh;
+    cursor: pointer;
+}
+
+.top {
+    width: 100%;
+    height: 0.3vh;
+    margin-bottom: -7%;
+    background: black;
+    transform: rotate(50deg);
+}
+
+.bottom {
+    width: 100%;
+    height: 0.3vh;
+    background: black;
+    transform: rotate(-50deg);
+}

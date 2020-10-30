@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='../styles/header.css'>
+    <link rel='stylesheet' href='../styles/footer.css'>
+    <link rel="stylesheet" href="../styles/about.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src='../scripts/redirects.js'></script>
+    <script src='../scripts/cookie.js'></script>
+    <title>ABOUT | Galipahinana</title>
+</head>
+
+<body>
+    <nav>
+        <div class='nav-container'>
+            <div class='title' onclick='homeRedirect()'>GALIPAHINANA</div>
+            <div class='nav-item' onclick='homeRedirect()'>HOME</div>
+            <div class='nav-item menu-container'>CATEGORIES
+                <ul class='dropdown-menu'>
+                    <li onclick='womenClick()'>WOMEN</li>
+                    <li onclick='menClick()'>MEN</li>
+                    <li onclick='accClick()'>ACCESSORIES</li>
+                </ul>
+            </div>
+            <div class='nav-item active' onclick='aboutClick()'>ABOUT US</div>
+            <div class='nav-item' onclick='cartClick()' id='cart'><span class='fa fa-shopping-bag'></span>&nbsp;Cart
+            </div>
+            <div class='nav-item' onclick='loginClick()' id='login'><span class='fa fa-user-circle-o'></span>&nbsp;Log
+                In</div>
+            <div class='nav-item' onclick='logoutClick()' id='logout'><span class='fa fa-user-circle-o'></span>&nbsp;Log
+                Out</div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="content-wrapper">
+            <div class="heading-container">
+                <h1>WHY STREETWEAR?</h1>
+            </div>
+
+            <div class="image-wrapper">
+                <div class='image-container image-1'></div>
+                <div class='image-container image-2'></div>
+                <div class='image-container image-3'></div>
+                <!-- <img src="../assets/6 fp.jpg">
+                <img src="../assets/13 fp.jpg">
+                <img src="../assets/14 fp.jpg"> -->
+            </div>
+
+            <h1 class='subtitle'>Our Philosophy</h1>
+
+            <p>Streetwear, isn't a new concept- the concept emerged in 80s, and ever since then there has been no
+                looking back. The popularity of streetwear has been growing by leaps and bounds.</p>
+            <p>While the luxury collaborations pitch at a higher price point, suggesting an older consumer with more
+                disposable income, it’s the Gen-Z market building the hype of streetwear. Every Thursday, lines of
+                consumers, predominantly teenage boys (some are so young they are accompanied by parents), wait at the
+                Supreme store for the latest drop.</p>
+            <p>Four college students from Delhi who have always loved fashion- Harshit, Nidhi, Ayush and Rasika set out
+                to touch the lives of people through fashion. Here's what they had to say, "Streetwear always seemed to
+                intrigue us. But why should streetwear be limited just to western styles? "</p>
+            <p>Our founders decided to bring the essence of the rustic Indian culture to the forefront while at the same
+                time keep the avenues open for a style fusion and a western influence.</p>
+            <p>Taking inspiration from the streets of India and the world, presenting a brand that suits your style :
+                राह के लिए उपयुक्त पोशाक !</p>
+            <p>Galipahinana (गलीपहनाना ) - Curating rustic street styles which make you look chic and elegant.
+                Showcasing minimalictic fashion, made for you with love.</p>
+            <p>Welcome to the Galipahinana family!</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class='footer-info-wrapper'>
+            <div class='footer-info footer-title' onClick='titleClick()'>GALIPAHINANA</div>
+            <div class='footer-info'>
+                <p class='footer-info-title'>CONTACT US</p>
+                <p class='footer-content'>Telephone:<br><span style='color:#242323'>022-67819272</span></p>
+                <p class='footer-content'>Email:<br><a href='mailto:galipahinana@gmail.com'
+                        style='color:#242323'>galipahinana@gmail.com</a></p>
+            </div>
+            <div class='footer-info'>
+                <p class='footer-info-title'>STORE ADDRESS</p>
+                <p class='footer-content' style='color:#242323'>The Galipahinana Store<br>Rajouri Garden<br>South Delhi
+                    - 110027</p>
+            </div>
+            <div class='footer-info'>
+                <p>STAY CONNECTED</p>
+                <p class='footer-content footer-logo'><a href='https://www.instagram.com/galipahinana/'
+                        target="_blank"><i class='fa fa-instagram fa-2x'></i></a>&nbsp;&nbsp;
+                    <a href='https://www.facebook.com/galipahinana-103518154732555' target='_blank'><i
+                            class='fa fa-facebook-official fa-2x'></i></a></p>
+            </div>
+        </div>
+        <div class='copyright'>&copy; 2020 by Galipahinana</div>
+    </footer>
+</body>
+
+</html>

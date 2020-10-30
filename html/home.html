@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link rel='stylesheet' href='../styles/header.css'>
+    <link rel='stylesheet' href='../styles/footer.css'>
+    <link rel='stylesheet' href='../styles/home.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <script src='../scripts/redirects.js'></script>
+    <script src='../scripts/cookie.js'></script>
+    <title>HOME | Galipahinana</title>
+</head>
+
+<body>
+    <nav>
+        <div class='nav-container'>
+            <div class='title' onclick='homeRedirect()'>GALIPAHINANA</div>
+            <div class='nav-item active' onclick='homeRedirect()'>HOME</div>
+            <div class='nav-item menu-container'>CATEGORIES
+                <ul class='dropdown-menu'>
+                    <li onclick='womenClick()'>WOMEN</li>
+                    <li onclick='menClick()'>MEN</li>
+                    <li onclick='accClick()'>ACCESSORIES</li>
+                </ul>
+            </div>
+            <div class='nav-item' onclick='aboutClick()'>ABOUT US</div>
+            <div class='nav-item' onclick='cartClick()' id='cart'><span class='fa fa-shopping-bag'></span>&nbsp;Cart
+            </div>
+            <div class='nav-item' onclick='loginClick()' id='login'><span class='fa fa-user-circle-o'></span>&nbsp;Log
+                In</div>
+            <div class='nav-item' onclick='logoutClick()' id='logout'><span class='fa fa-user-circle-o'></span>&nbsp;Log
+                Out</div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Top cards -->
+        <div class='image-wrapper'>
+            <div class='image-container'>
+                <img src="../assets/4 fp.jpg" class="image-top">
+            </div>
+            <div class='text-container'>
+                <h1>CHIC & ELEGANT</h1>
+                <h2>HOT SPRING LOOKS</h2>
+                <div class="rule"></div>
+                <p>Shop Women</p>
+            </div>
+        </div>
+        <div class='image-wrapper' style="background-color: #d4e4e0;">
+            <div class='text-container' style="background-color: #a3c7bd; color: white">
+                <h1>SMART & SLICK</h1>
+                <h2>ALL SEASON WEAR</h2>
+                <div class="rule"></div>
+                <p>Shop Men</p>
+            </div>
+            <div class='image-container'>
+                <img src="../assets/exp2_googleform_PNG.png" class="image-top">
+            </div>
+        </div>
+
+        <!-- New Arrivals -->
+        <div class='new-arrivals-container'>
+            <h1 style="text-align: center;">NEW ARRIVALS</h1>
+            <div class="arrivals-wrapper" id='wrapper-1' onclick="window.location.href='products/Crop Top-Track Pants.html'">
+                <div class='new-box'>NEW</div>
+                <img src="../assets/crop-top.webp">
+                <p id='name_box_1'>Crop-Top Track Pants<br>₹1,399.99</p>
+            </div>
+            <div class="arrivals-wrapper middle" id='wrapper-2' onclick="window.location.href='products/Washable Aztec Print Mask.html'">
+                <div class='new-box'>NEW</div>
+                <img src="../assets/aztec.webp">
+                <p id='name_box_2'>Washable Aztec Print Mask<br>₹225.00</p>
+            </div>
+            <div class="arrivals-wrapper" id='wrapper-3'  onclick="window.location.href='products/Flat Sleeves Shirt.html'">
+                <div class='new-box'>NEW</div>
+                <img src="../assets/shirt.webp">
+                <p id='name_box_3'>Flat Sleeves Shirt<br>₹599.99</p>
+            </div>
+        </div>
+
+        <!-- Mail list subscribe -->
+        <div class="subscriber-wrapper">
+            <h1>GET ON THE LIST</h1>
+            <p>and be the first to shop new arrivals and exclusive promotions.</p>
+            <form name="f1" action="../php/subscribe.php" method="POST">
+                <input type="email" name="email" id="email" placeholder="Enter you email here*" required /><br>
+                <input type="submit" value="Subscribe Now" />
+            </form>
+        </div>
+
+        <!-- Flash Sale -->
+        <div class="flash-wrapper">
+            <table class="flash-container">
+                <tr>
+                    <td>
+                        <img src="../assets/13 fp.jpg" width="100%">
+                    </td>
+                    <td class="text-holder">
+                        <h1>FLASH SALE</h1>
+                        <h2>UPTO 25% OFF</h2>
+                    </td>
+                    <td>
+                        <img src="../assets/11 fp.jpg">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class='footer-info-wrapper'>
+            <div class='footer-info footer-title'>
+                <p onclick='homeRedirect()' style="cursor: pointer;">GALIPAHINANA</p>
+            </div>
+            <div class='footer-info'>
+                <p class='footer-info-title'>CONTACT US</p>
+                <p class='footer-content'>Telephone:<br><span style='color:#242323'>022-67819272</span></p>
+                <p class='footer-content'>Email:<br><a href='mailto:galipahinana@gmail.com'
+                        style='color:#242323'>galipahinana@gmail.com</a></p>
+            </div>
+            <div class='footer-info'>
+                <p class='footer-info-title'>STORE ADDRESS</p>
+                <p class='footer-content' style='color:#242323'>The Galipahinana Store<br>Rajouri Garden<br>South Delhi
+                    - 110027</p>
+            </div>
+            <div class='footer-info'>
+                <p>STAY CONNECTED</p>
+                <p class='footer-content footer-logo'><a href='https://www.instagram.com/galipahinana/'
+                        target='_blank'><i class='fa fa-instagram fa-2x'></i></a>&nbsp;&nbsp;
+                    <a href='https://www.facebook.com/galipahinana-103518154732555' target='_blank'><i
+                            class='fa fa-facebook-official fa-2x'></i></a></p>
+            </div>
+        </div>
+        <div class='copyright'>&copy; 2020 by Galipahinana</div>
+    </footer>
+
+    <script>
+        function mouseover1() {
+            const box = document.getElementById(`name_box_1`);
+            box.style.opacity = 0.5;
+            box.innerHTML = 'VIEW DETAILS';
+        };
+
+        function mouseover2() {
+            const box = document.getElementById(`name_box_2`);
+            box.style.opacity = 0.5;
+            box.innerHTML = 'VIEW DETAILS';
+        };
+
+        function mouseover3() {
+            const box = document.getElementById(`name_box_3`);
+            box.style.opacity = 0.5;
+            box.innerHTML = 'VIEW DETAILS';
+        };
+
+        function mouseout1() {
+            const box = document.getElementById(`name_box_1`);
+            box.style.opacity = 1;
+            box.innerHTML = 'Crop-Top Track Pants<br>₹1,399.99';
+        };
+
+        function mouseout2() {
+            const box = document.getElementById(`name_box_2`);
+            box.style.opacity = 1;
+            box.innerHTML = 'Washable Aztec Print Mask<br>₹225.00';
+        };
+
+
+        function mouseout3() {
+            const box = document.getElementById(`name_box_3`);
+            box.style.opacity = 1;
+            box.innerHTML = 'Flat Sleeves Shirt<br>₹599.99';
+        };
+
+        const arrivals = new Array(3);
+        arrivals[0] = document.getElementById('wrapper-1');
+        arrivals[1] = document.getElementById('wrapper-2');
+        arrivals[2] = document.getElementById('wrapper-3');
+
+        arrivals[0].addEventListener('mouseover', mouseover1);
+        arrivals[1].addEventListener('mouseover', mouseover2);
+        arrivals[2].addEventListener('mouseover', mouseover3);
+
+        arrivals[0].addEventListener('mouseout', mouseout1);
+        arrivals[1].addEventListener('mouseout', mouseout2);
+        arrivals[2].addEventListener('mouseout', mouseout3);
+    </script>
+</body>
+
+</html>

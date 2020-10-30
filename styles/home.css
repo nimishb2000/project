@@ -1,0 +1,162 @@
+/* Top Cards */
+
+.image-wrapper {
+    width: 100%;
+    background: #e8e0de;
+    padding: 0 18vw;
+    height: 65vh;
+}
+
+.image-container {
+    height: 100%;
+    width: 50%;
+    float: left;
+}
+
+.image-top {
+    height: 100%;
+    width: 100%;
+}
+
+.text-container {
+    height: 100%;
+    width: 50%;
+    float: left;
+    background: #ffe9e3;
+    text-align: center;
+    color: #313131;
+}
+
+.text-container h1 {
+    margin: 35% 0 0 0;
+    font-size: 2.5em;
+    font-weight: normal;
+}
+
+.text-container h2 {
+    font-weight: normal;
+}
+
+.text-container p {
+    font-size: 1.5em;
+}
+
+.rule {
+    height: 0.2vh;
+    width: 20%;
+    margin: 5% 40%;
+    background: #313131;
+}
+
+/* New Arrivals */
+
+.new-arrivals-container {
+    text-align: center;
+    padding: 0 17%;
+    height: 72.5vh;
+}
+
+.new-arrivals-container h1 {
+    margin: 3% auto;
+}
+
+.new-arrivals-container img {
+    height: 52vh;
+}
+
+.middle {
+    margin: auto 4.5%;
+}
+
+.arrivals-wrapper {
+    width: min-content;
+    float: left;
+    height: 62vh;
+    background: #e0e0e0;
+    cursor: pointer;
+}
+
+.arrivals-wrapper p {
+    font-size: 1.2em;
+    margin: 2% auto;
+}
+
+.new-box {
+    background: #45a37a;
+    position: absolute;
+    color: white;
+    width: 5%;
+    height: 5%;
+    padding: 0.6% 0;
+}
+
+/* Mail List */
+
+.subscriber-wrapper {
+    text-align: center;
+    width: 100%;
+}
+
+.subscriber-wrapper h1 {
+    font-weight: 500;
+    margin-top: 3%;
+}
+
+.subscriber-wrapper p {
+    font-size: 1.3em;
+    margin-bottom: 2%;
+}
+
+.subscriber-wrapper input {
+    width: 20%;
+    margin: 0.2% 0;
+    padding: 0.6% 1%;
+    font-size: 0.9em;
+}
+
+input[type='submit'] {
+    background: rgb(140, 223, 144);
+    color: #242323;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-bottom: 5%;
+    border: none;
+}
+
+input[type='submit']:hover {
+    background: rgb(12, 116, 17);
+    color: #fdfdfd;
+    transition-duration: 0.5s;
+}
+
+/* Flash Sale */
+
+.flash-wrapper {
+    background: #242323;
+    width: 100%;
+    padding: 20vh 20vw;
+    color: #fdfdfd;
+}
+
+.flash-container img {
+    height: 40vh;
+    width: 18vw;
+}
+
+.text-holder {
+    width: 50%;
+    text-align: center;
+}
+
+.text-holder h1, .text-holder h2 {
+    font-weight: normal;
+    margin: 8% auto;
+}
+
+.text-holder h1{
+    font-size: 3em;
+}
+
+.text-holder h2 {
+    font-size: 2em;
+}
